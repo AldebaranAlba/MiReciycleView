@@ -35,16 +35,20 @@ public class MainActivity extends AppCompatActivity {
 
         Color colorShore = null;
         Color colorAldebaran = null;
+        Color colorGoku = null;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             colorShore = Color.valueOf(0xff99fbf4);
             colorAldebaran = Color.valueOf(0xfffbe899);
+            colorGoku = Color.valueOf(0xfffb9999);
         }
 
         Usuario shore = new Usuario("Shore","Hola","30 minutos",R.drawable.shore, colorShore);
         Usuario aldebaran = new Usuario("Aldebaran","Ya voy para alla","Ahora",R.drawable.aldebaran, colorAldebaran);
+        Usuario goku = new Usuario("Goku","Vamos por cheve","Hace un momento",R.drawable.goku, colorGoku);
 
         usuarios.add(shore);
         usuarios.add(aldebaran);
+        usuarios.add(goku);
 
 //        ConstraintLayout l = findViewById(R.id.main);
 //
